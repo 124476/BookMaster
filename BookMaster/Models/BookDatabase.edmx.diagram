@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e538806c794d4104be928cab27ff93b1" Name="Diagram1">
+        <EntityTypeShape EntityType="BookMasterDatabaseModel.Author" Width="1.5" PointX="3.75" PointY="10.5" />
+        <EntityTypeShape EntityType="BookMasterDatabaseModel.Book" Width="1.5" PointX="0.75" PointY="3.375" />
+        <EntityTypeShape EntityType="BookMasterDatabaseModel.Bookauthor" Width="1.5" PointX="6" PointY="3.75" />
+        <EntityTypeShape EntityType="BookMasterDatabaseModel.BookCover" Width="1.5" PointX="3" PointY="2.5" />
+        <EntityTypeShape EntityType="BookMasterDatabaseModel.BookSubject" Width="1.5" PointX="3" PointY="7.75" />
+        <EntityTypeShape EntityType="BookMasterDatabaseModel.Customer" Width="1.5" PointX="5.75" PointY="6.75" />
+        <EntityTypeShape EntityType="BookMasterDatabaseModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="0.75" />
+        <AssociationConnector Association="BookMasterDatabaseModel.FK_Bookauthor_Author" />
+        <AssociationConnector Association="BookMasterDatabaseModel.FK_Bookauthor_Book" />
+        <AssociationConnector Association="BookMasterDatabaseModel.FK_BookCover_Book" />
+        <AssociationConnector Association="BookMasterDatabaseModel.FK_BookSubject_Book" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

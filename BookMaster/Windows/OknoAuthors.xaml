@@ -1,0 +1,32 @@
+﻿<Window x:Class="BookMaster.Windows.OknoAuthors"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookMaster.Windows"
+        mc:Ignorable="d"
+        Title="Authors" Height="350" Width="400" MinHeight="350" MinWidth="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel>
+            <ComboBox Name="ComboAuthors" FontSize="17" SelectionChanged="ComboAuthors_SelectionChanged"></ComboBox>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{Binding DeathDate}" FontSize="17"></TextBlock>
+                <TextBlock Text="-" FontSize="17" Margin="2,0,2,0"></TextBlock>
+                <TextBlock Text="{Binding DeathDate}" FontSize="17"></TextBlock>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="1">
+            <TextBlock Text="Bio" FontSize="17"></TextBlock>
+            <ScrollViewer Height="150">
+                <TextBlock Text="{Binding Bio}" TextWrapping="Wrap" Width="350"></TextBlock>
+            </ScrollViewer>
+            <TextBlock Text="{Binding Wikipedia}" TextWrapping="Wrap" Width="350"></TextBlock>
+            <Button Name="CloseBtn" Content="Close" Click="CloseBtn_Click" Width="100" FontSize="17" Margin="10,10,10,10" HorizontalAlignment="Left"></Button>
+        </StackPanel>
+    </Grid>
+</Window>
