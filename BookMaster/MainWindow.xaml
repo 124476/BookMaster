@@ -11,18 +11,19 @@
             <RowDefinition Height="auto"></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
-        <Menu>
+        <Menu FontSize="17">
             <MenuItem Header="File">
-                <MenuItem Header="Open" />
-                <MenuItem Header="Open"/>
-                <MenuItem Header="Open"/>
+                <MenuItem Header="Open" Name="Open" Click="Open_Click"/>
+                <MenuItem Header="Logout" Name="Logout" Click="Logout_Click"/>
+                <MenuItem Header="Close" Name="Close" Click="Close_Click"/>
             </MenuItem>
-            <MenuItem Header="Library"/>
+            <MenuItem Header="Library" Name="Library">
+                <MenuItem Header="Main" Name="MainBtn" Click="MainBtn_Click"/>
+                <MenuItem Header="Manage Customers" Name="ManageCustomers" Click="ManageCustomers_Click"/>
+                <MenuItem Header="Circulation" Name="Circulation" Click="Circulation_Click"/>
+                <MenuItem Header="Reports" Name="Reports" Click="Reports_Click"/>
+            </MenuItem>
         </Menu>
-        <StackPanel Orientation="Horizontal" Visibility="Collapsed">
-            <ComboBox x:Name="FileBtn" SelectionChanged="FileBtn_SelectionChanged" FontSize="17" Width="100"></ComboBox>
-            <ComboBox x:Name="LibraryBtn" SelectionChanged="LibraryBtn_SelectionChanged" FontSize="17" Width="100"></ComboBox>
-        </StackPanel>
         <Frame x:Name="MyFrame" NavigationUIVisibility="Hidden" Grid.Row="1"></Frame>
     </Grid>
 </Window>

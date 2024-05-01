@@ -66,7 +66,7 @@
             </Grid>
             <StackPanel Grid.Row="1">
                 <TextBlock Text="Current Issues" FontSize="23"></TextBlock>
-                <DataGrid Name="DataIssues" AutoGenerateColumns="False" IsReadOnly="True" Height="80">
+                <DataGrid Name="DataIssues" AutoGenerateColumns="False" IsReadOnly="True" Height="80" FontSize="15">
                     <DataGrid.Columns>
                         <DataGridTextColumn Header="Title" Binding="{Binding Book.Title}"></DataGridTextColumn>
                         <DataGridTextColumn Header="Date of issue" Binding="{Binding DateOfIssue, StringFormat='dd/MM/yyyy'}"></DataGridTextColumn>
@@ -77,7 +77,7 @@
             </StackPanel>
             <StackPanel Grid.Row="2">
                 <TextBlock Text="History" FontSize="23"></TextBlock>
-                <DataGrid Name="DataHistory" AutoGenerateColumns="False" IsReadOnly="True" Height="80">
+                <DataGrid Name="DataHistory" AutoGenerateColumns="False" IsReadOnly="True" Height="80" FontSize="15">
                     <DataGrid.Columns>
                         <DataGridTextColumn Header="Title" Binding="{Binding Book.Title}"></DataGridTextColumn>
                         <DataGridTextColumn Header="Date of issue" Binding="{Binding DateOfIssue, StringFormat='dd/MM/yyyy'}"></DataGridTextColumn>

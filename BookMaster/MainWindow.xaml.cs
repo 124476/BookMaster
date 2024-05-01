@@ -27,63 +27,53 @@ namespace BookMaster
         public MainWindow()
         {
             InitializeComponent();
-#if DEBUG
-            MyFrame.Navigate(new PageCirculation());
-#else
-
             MyFrame.Navigate(new PageMain());
-            FileBtn.ItemsSource = new string[] { "File", "Open", "Close" };
-            FileBtn.SelectedIndex = 0;
-            LibraryBtn.ItemsSource = new string[] { "Library", "Manage Customers", "Circulation", "Reports", "Main" };
-            LibraryBtn.SelectedIndex = 0;
-            LibraryBtn.Visibility = Visibility.Hidden;
+            Logout.Visibility = Visibility.Collapsed;
+            Library.Visibility = Visibility.Hidden;
             App.isOpen = false;
-#endif
-            }
-
-        private void LibraryBtn_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if (LibraryBtn.SelectedIndex == 1)
-            {
-                MyFrame.Navigate(new PageCustomers());
-            }
-            if (LibraryBtn.SelectedIndex == 2)
-                MyFrame.Navigate(new PageCirculation());
-
-            if (LibraryBtn.SelectedIndex == 3)
-            {
-                MyFrame.Navigate(new PageReports());
-            }
-            if (LibraryBtn.SelectedIndex == 4)
-            {
-                MyFrame.Navigate(new PageMain());
-            }
-            LibraryBtn.SelectedIndex = 0;
         }
 
-        private void FileBtn_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void Open_Click(object sender, RoutedEventArgs e)
         {
-            if (FileBtn.SelectedIndex == 1)
+            var dialog = new OknoLogin();
+            if (dialog.ShowDialog().GetValueOrDefault())
             {
-                var dialog = new OknoLogin();
-                if (dialog.ShowDialog().GetValueOrDefault())
-                {
-                    FileBtn.ItemsSource = new string[] { "File", "Open", "Close", "Logout" };
-                    LibraryBtn.Visibility = Visibility.Visible;
-                }
+                Logout.Visibility = Visibility.Visible;
+                Library.Visibility = Visibility.Visible;
             }
-            if (FileBtn.SelectedIndex == 3)
-            {
-                App.isOpen = false;
-                FileBtn.ItemsSource = new string[] { "File", "Open", "Close" };
-                LibraryBtn.Visibility = Visibility.Hidden;
-                MyFrame.Navigate(new PageMain());
-            }
-            if (FileBtn.SelectedIndex == 2)
-            {
-                App.Current.Shutdown();
-            }
-            FileBtn.SelectedIndex = 0;
+        }
+
+        private void Logout_Click(object sender, RoutedEventArgs e)
+        {
+            App.isOpen = false;
+            Logout.Visibility = Visibility.Collapsed;
+            Library.Visibility = Visibility.Collapsed;
+            MyFrame.Navigate(new PageMain());
+        }
+
+        private void Close_Click(object sender, RoutedEventArgs e)
+        {
+            App.Current.Shutdown();
+        }
+
+        private void MainBtn_Click(object sender, RoutedEventArgs e)
+        {
+            MyFrame.Navigate(new PageMain());
+        }
+
+        private void ManageCustomers_Click(object sender, RoutedEventArgs e)
+        {
+            MyFrame.Navigate(new PageCustomers());
+        }
+
+        private void Circulation_Click(object sender, RoutedEventArgs e)
+        {
+            MyFrame.Navigate(new PageCirculation());
+        }
+
+        private void Reports_Click(object sender, RoutedEventArgs e)
+        {
+            MyFrame.Navigate(new PageReports());
         }
     }
 }

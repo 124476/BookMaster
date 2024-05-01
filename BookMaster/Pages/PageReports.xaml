@@ -9,6 +9,37 @@
       Title="PageReports">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Reports" FontSize="25" Margin="10,10,0,10"></TextBlock>
+        <ComboBox x:Name="ComboPoisk" Width="150" FontSize="17" Height="30" HorizontalAlignment="Right" Margin="0,10,210,10" SelectionChanged="ComboPoisk_SelectionChanged"></ComboBox>
+        <Button x:Name="ExportBtn" Content="Export" Width="150" FontSize="17" Background="White" Height="30" HorizontalAlignment="Right" Margin="0,10,10,10" Click="ExportBtn_Click"></Button>
+        <Menu Grid.Row="1" FontSize="17">
+            <MenuItem Header="Reminders" Name="Reminders" Click="Reminders_Click"></MenuItem>
+            <MenuItem Header="Book history" Name="BookHistory" Click="BookHistory_Click"></MenuItem>
+        </Menu>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition x:Name="GridPanel" Width="0"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <StackPanel HorizontalAlignment="Center" Width="200">
+                <TextBlock Text="Book ID" FontSize="17"></TextBlock>
+                <TextBox x:Name="PoiskText" TextChanged="PoiskText_TextChanged" FontSize="17"></TextBox>
+                <TextBlock x:Name="SearchedTitle" FontSize="21"></TextBlock>
+                <TextBlock x:Name="SearchedSubtitle" FontSize="17"></TextBlock>
+            </StackPanel>
+            <DataGrid x:Name="DataReminders" AutoGenerateColumns="False" IsReadOnly="True" FontSize="17" Grid.Column="1">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Title" Binding="{Binding Book.Title}" x:Name="ColumnTitle"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Customer" Binding="{Binding Customer.Name}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Date of issue" Binding="{Binding DateOfIssue, StringFormat='dd/MM/yyyy'}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Return until" Binding="{Binding ReturnDate, StringFormat='dd/MM/yyyy'}"></DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
     </Grid>
 </Page>
