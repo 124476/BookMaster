@@ -14,6 +14,12 @@ namespace BookMaster.Models
     
     public partial class Customer
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Customer()
+        {
+            this.HistoryBook = new HashSet<HistoryBook>();
+        }
+    
         public int Id { get; set; }
         public string IdC { get; set; }
         public string Name { get; set; }
@@ -22,5 +28,8 @@ namespace BookMaster.Models
         public string City { get; set; }
         public string Phone { get; set; }
         public string Email { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<HistoryBook> HistoryBook { get; set; }
     }
 }

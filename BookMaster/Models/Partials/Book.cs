@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace BookMaster.Models
 {
@@ -44,6 +45,15 @@ namespace BookMaster.Models
                 }
 
                 return subjects;
+            }
+        }
+
+        public byte[] CoverOne
+        {
+            get
+            {
+                var photos = App.DB.BookCover.Where(x => x.BookId == Id).ToList();
+                return photos[App.IndexPhoto % photos.Count].CoverFile;
             }
         }
     }

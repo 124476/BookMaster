@@ -16,5 +16,6 @@ namespace BookMaster
     {
         public static BookMasterDatabaseEntities DB = new BookMasterDatabaseEntities();
         public static bool isOpen;
+        public static int IndexPhoto;
     }
 }

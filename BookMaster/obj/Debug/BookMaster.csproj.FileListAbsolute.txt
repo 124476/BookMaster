@@ -32,3 +32,5 @@ C:\Users\Stipo6\source\repos\BookMaster\BookMaster\obj\Debug\Pages\PageCustomet.
 C:\Users\Stipo6\source\repos\BookMaster\BookMaster\obj\Debug\Pages\PageCustomet.baml
 C:\Users\Stipo6\source\repos\BookMaster\BookMaster\obj\Debug\Pages\PageCirculation.g.cs
 C:\Users\Stipo6\source\repos\BookMaster\BookMaster\obj\Debug\Pages\PageCirculation.baml
+C:\Users\Stipo6\source\repos\BookMaster\BookMaster\obj\Debug\Pages\PageReports.g.cs
+C:\Users\Stipo6\source\repos\BookMaster\BookMaster\obj\Debug\Pages\PageReports.baml

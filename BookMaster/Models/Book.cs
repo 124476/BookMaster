@@ -20,6 +20,7 @@ namespace BookMaster.Models
             this.Bookauthor = new HashSet<Bookauthor>();
             this.BookCover = new HashSet<BookCover>();
             this.BookSubject = new HashSet<BookSubject>();
+            this.HistoryBook = new HashSet<HistoryBook>();
         }
     
         public int Id { get; set; }
@@ -34,5 +35,7 @@ namespace BookMaster.Models
         public virtual ICollection<BookCover> BookCover { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<BookSubject> BookSubject { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<HistoryBook> HistoryBook { get; set; }
     }
 }

@@ -11,7 +11,15 @@
             <RowDefinition Height="auto"></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
-        <StackPanel Orientation="Horizontal">
+        <Menu>
+            <MenuItem Header="File">
+                <MenuItem Header="Open" />
+                <MenuItem Header="Open"/>
+                <MenuItem Header="Open"/>
+            </MenuItem>
+            <MenuItem Header="Library"/>
+        </Menu>
+        <StackPanel Orientation="Horizontal" Visibility="Collapsed">
             <ComboBox x:Name="FileBtn" SelectionChanged="FileBtn_SelectionChanged" FontSize="17" Width="100"></ComboBox>
             <ComboBox x:Name="LibraryBtn" SelectionChanged="LibraryBtn_SelectionChanged" FontSize="17" Width="100"></ComboBox>
         </StackPanel>

@@ -6,7 +6,8 @@
       xmlns:local="clr-namespace:BookMaster.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="PageCirculation">
+      Title="PageCirculation"
+      Loaded="Page_Loaded">
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -19,11 +20,11 @@
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
-            <TextBlock Text="BOOKMASTER3000" FontSize="27" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+            <Image Source="\Impots\Logo.png"></Image>
             <StackPanel Grid.Row="1" HorizontalAlignment="Center">
                 <TextBlock Text="Customer ID" FontSize="17" Margin="0,0,0,10"></TextBlock>
                 <TextBox x:Name="PoiskCustomer" FontSize="17" Width="200" Margin="0,0,0,10"></TextBox>
-                <Button x:Name="Circulation" Content="Circulation" FontSize="17" Click="Circulation_Click" Width="200" HorizontalAlignment="Right" Margin="0,5,0,0"></Button>
+                <Button x:Name="Circulation" Content="Circulation" FontSize="17" Click="Circulation_Click" Width="200" HorizontalAlignment="Right" Margin="0,5,0,0" Background="White"></Button>
             </StackPanel>
             <StackPanel Grid.Row="2">
                 <TextBlock Text="{Binding Name}" FontSize="21"></TextBlock>
@@ -33,6 +34,7 @@
                     <TextBlock Text="{Binding Zip}" FontSize="17"></TextBlock>
                     <TextBlock Text="{Binding City}" FontSize="17"></TextBlock>
                 </StackPanel>
+                <Button x:Name="Edit" Content="Edit..." Background="White" Width="100" Click="Edit_Click" FontSize="17" HorizontalAlignment="Right" Margin="0,5,10,0" IsEnabled="False"></Button>
             </StackPanel>
         </Grid>
         <Grid Grid.Column="1">
@@ -43,13 +45,46 @@
             </Grid.RowDefinitions>
             <Grid>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
                     <ColumnDefinition></ColumnDefinition>
                 </Grid.ColumnDefinitions>
                 <StackPanel>
                     <TextBlock Text="Issue / Return" FontSize="27" HorizontalAlignment="Center"></TextBlock>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Book ID" FontSize="17" Width="80"></TextBlock>
+                        <TextBox Name="PoiskBook" FontSize="17" Margin="10,0,0,0" Width="200" TextChanged="PoiskBook_TextChanged"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="" FontSize="17" Width="80"></TextBlock>
+                        <TextBlock Name="SearchBook" FontSize="17" Margin="10,0,0,0" Width="200"></TextBlock>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1">
+                    <Button Name="IssueBtn" Content="Issue" FontSize="17" Click="IssueBtn_Click" Background="White" IsEnabled="False"></Button>
+                    <Button Name="ReturnBtn" Content="Return" FontSize="17" Click="ReturnBtn_Click" Background="White" IsEnabled="False"></Button>
                 </StackPanel>
             </Grid>
+            <StackPanel Grid.Row="1">
+                <TextBlock Text="Current Issues" FontSize="23"></TextBlock>
+                <DataGrid Name="DataIssues" AutoGenerateColumns="False" IsReadOnly="True" Height="80">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Title" Binding="{Binding Book.Title}"></DataGridTextColumn>
+                        <DataGridTextColumn Header="Date of issue" Binding="{Binding DateOfIssue, StringFormat='dd/MM/yyyy'}"></DataGridTextColumn>
+                        <DataGridTextColumn Header="Return until" Binding="{Binding ReturnDate, StringFormat='dd/MM/yyyy'}"></DataGridTextColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+                <Button Name="RenewBtn" Content="Renew" FontSize="17" Click="RenewBtn_Click"  Width="150" Background="White" Margin="10,10,10,0" HorizontalAlignment="Right" IsEnabled="False"></Button>
+            </StackPanel>
+            <StackPanel Grid.Row="2">
+                <TextBlock Text="History" FontSize="23"></TextBlock>
+                <DataGrid Name="DataHistory" AutoGenerateColumns="False" IsReadOnly="True" Height="80">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Title" Binding="{Binding Book.Title}"></DataGridTextColumn>
+                        <DataGridTextColumn Header="Date of issue" Binding="{Binding DateOfIssue, StringFormat='dd/MM/yyyy'}"></DataGridTextColumn>
+                        <DataGridTextColumn Header="Return date" Binding="{Binding ReturnDate, StringFormat='dd/MM/yyyy'}"></DataGridTextColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </StackPanel>
         </Grid>
     </Grid>
 </Page>

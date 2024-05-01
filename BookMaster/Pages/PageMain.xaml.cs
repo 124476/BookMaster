@@ -31,6 +31,7 @@ namespace BookMaster.Pages
             UpBtn.Content = "<";
             LastBtn.Content = "<";
             contextRow = 1;
+            App.IndexPhoto = 0;
         }
 
         private void SearchBtn_Click(object sender, RoutedEventArgs e)
@@ -49,6 +50,8 @@ namespace BookMaster.Pages
             books = books.Where(x => x.Subjects.ToLower().Contains(PoiskSubject.Text.ToLower())).ToList();
 
             DataBooks.ItemsSource = books;
+            SearchedText.Text = books.Count.ToString();
+            DataContext = null;
             DataContext = contextBook;
         }
 
@@ -74,12 +77,21 @@ namespace BookMaster.Pages
 
         private void LastBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            if (App.IndexPhoto != 0)
+            {
+                App.IndexPhoto--;
+            }
+            else
+            {
+                App.IndexPhoto = App.DB.BookCover.Where(x => x.BookId == contextBook.Id).Count() - 1;
+            }
+            Refresh();
         }
 
         private void NextBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            App.IndexPhoto++;
+            Refresh();
         }
 
         private void DataBooks_MouseDoubleClick(object sender, MouseButtonEventArgs e)
@@ -90,7 +102,7 @@ namespace BookMaster.Pages
                 contextBook = book;
                 Refresh();
                 var dialog = new OknoAuthors(book);
-                dialog.Show();
+                dialog.ShowDialog();
             }
         }
     }

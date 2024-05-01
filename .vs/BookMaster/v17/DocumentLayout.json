@@ -3,80 +3,84 @@
   "WorkspaceRootPath": "C:\\Users\\Stipo6\\source\\repos\\BookMaster\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|c:\\users\\stipo6\\source\\repos\\bookmaster\\bookmaster\\pages\\pagecirculation.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|solutionrelative:bookmaster\\pages\\pagecirculation.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|c:\\users\\stipo6\\source\\repos\\bookmaster\\bookmaster\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|C:\\Users\\Stipo6\\source\\repos\\BookMaster\\bookmaster\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|solutionrelative:bookmaster\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|c:\\users\\stipo6\\source\\repos\\bookmaster\\bookmaster\\pages\\pagereports.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|solutionrelative:bookmaster\\pages\\pagereports.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|c:\\users\\stipo6\\source\\repos\\bookmaster\\bookmaster\\windows\\oknoauthors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|solutionrelative:bookmaster\\windows\\oknoauthors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|c:\\users\\stipo6\\source\\repos\\bookmaster\\bookmaster\\windows\\oknoauthors.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|solutionrelative:bookmaster\\windows\\oknoauthors.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|c:\\users\\stipo6\\source\\repos\\bookmaster\\bookmaster\\windows\\oknologin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|solutionrelative:bookmaster\\windows\\oknologin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|c:\\users\\stipo6\\source\\repos\\bookmaster\\bookmaster\\windows\\oknologin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|solutionrelative:bookmaster\\windows\\oknologin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|c:\\users\\stipo6\\source\\repos\\bookmaster\\bookmaster\\pages\\pagemain.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|solutionrelative:bookmaster\\pages\\pagemain.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|c:\\users\\stipo6\\source\\repos\\bookmaster\\bookmaster\\pages\\pagemain.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|solutionrelative:bookmaster\\pages\\pagemain.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|c:\\users\\stipo6\\source\\repos\\bookmaster\\bookmaster\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|C:\\Users\\Stipo6\\source\\repos\\BookMaster\\bookmaster\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|solutionrelative:bookmaster\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|c:\\users\\stipo6\\source\\repos\\bookmaster\\bookmaster\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|solutionrelative:bookmaster\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|C:\\Users\\Stipo6\\source\\repos\\BookMaster\\bookmaster\\windows\\oknoauthors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|solutionrelative:bookmaster\\windows\\oknoauthors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|c:\\users\\stipo6\\source\\repos\\bookmaster\\bookmaster\\pages\\pagecustomet.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|solutionrelative:bookmaster\\pages\\pagecustomet.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|C:\\Users\\Stipo6\\source\\repos\\BookMaster\\bookmaster\\pages\\pagemain.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|solutionrelative:bookmaster\\pages\\pagemain.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|c:\\users\\stipo6\\source\\repos\\bookmaster\\bookmaster\\pages\\pagecustomet.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|solutionrelative:bookmaster\\pages\\pagecustomet.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|C:\\Users\\Stipo6\\source\\repos\\BookMaster\\bookmaster\\windows\\oknologin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|solutionrelative:bookmaster\\windows\\oknologin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|c:\\users\\stipo6\\source\\repos\\bookmaster\\bookmaster\\pages\\pagecustomers.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|solutionrelative:bookmaster\\pages\\pagecustomers.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|C:\\Users\\Stipo6\\source\\repos\\BookMaster\\bookmaster\\windows\\oknologin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|solutionrelative:bookmaster\\windows\\oknologin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|c:\\users\\stipo6\\source\\repos\\bookmaster\\bookmaster\\pages\\pagecustomers.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|solutionrelative:bookmaster\\pages\\pagecustomers.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|C:\\Users\\Stipo6\\source\\repos\\BookMaster\\bookmaster\\windows\\oknoauthors.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|solutionrelative:bookmaster\\windows\\oknoauthors.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|C:\\Users\\Stipo6\\source\\repos\\BookMaster\\bookmaster\\pages\\pagecirculation.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|solutionrelative:bookmaster\\pages\\pagecirculation.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|c:\\users\\stipo6\\source\\repos\\bookmaster\\bookmaster\\pages\\pagecirculation.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|solutionrelative:bookmaster\\pages\\pagecirculation.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|c:\\users\\stipo6\\source\\repos\\bookmaster\\bookmaster\\models\\bookdatabase.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
       "RelativeMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|solutionrelative:bookmaster\\models\\bookdatabase.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|c:\\users\\stipo6\\source\\repos\\bookmaster\\bookmaster\\models\\partials\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|C:\\Users\\Stipo6\\source\\repos\\BookMaster\\bookmaster\\models\\partials\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|solutionrelative:bookmaster\\models\\partials\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|c:\\users\\stipo6\\source\\repos\\bookmaster\\bookmaster\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|solutionrelative:bookmaster\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|C:\\Users\\Stipo6\\source\\repos\\BookMaster\\bookmaster\\pages\\pagemain.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|solutionrelative:bookmaster\\pages\\pagemain.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|c:\\users\\stipo6\\source\\repos\\bookmaster\\bookmaster\\pages\\pagecirculation.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|solutionrelative:bookmaster\\pages\\pagecirculation.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|C:\\Users\\Stipo6\\source\\repos\\BookMaster\\bookmaster\\pages\\pagecustomers.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|solutionrelative:bookmaster\\pages\\pagecustomers.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|C:\\Users\\Stipo6\\source\\repos\\BookMaster\\bookmaster\\pages\\pagecustomers.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|solutionrelative:bookmaster\\pages\\pagecustomers.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|C:\\Users\\Stipo6\\source\\repos\\BookMaster\\bookmaster\\pages\\pagecustomet.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|solutionrelative:bookmaster\\pages\\pagecustomet.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|C:\\Users\\Stipo6\\source\\repos\\BookMaster\\bookmaster\\pages\\pagecustomet.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|solutionrelative:bookmaster\\pages\\pagecustomet.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|C:\\Users\\Stipo6\\source\\repos\\BookMaster\\bookmaster\\pages\\pagereports.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|solutionrelative:bookmaster\\pages\\pagereports.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|C:\\Users\\Stipo6\\source\\repos\\BookMaster\\bookmaster\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|solutionrelative:bookmaster\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|C:\\Users\\Stipo6\\source\\repos\\BookMaster\\bookmaster\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|solutionrelative:bookmaster\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|C:\\Users\\Stipo6\\source\\repos\\BookMaster\\bookmaster\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{C093AA7C-BEA9-468B-BBE7-C1DF9E56E761}|BookMaster\\BookMaster.csproj|solutionrelative:bookmaster\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -86,7 +90,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 446,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 24,
           "Children": [
             {
               "$type": "Bookmark",
@@ -110,31 +114,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
+              "Title": "BookDatabase.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\BookMaster\\BookMaster\\Models\\BookDatabase.edmx",
+              "RelativeDocumentMoniker": "BookMaster\\Models\\BookDatabase.edmx",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\BookMaster\\BookMaster\\Models\\BookDatabase.edmx [Diagram1]",
+              "RelativeToolTip": "BookMaster\\Models\\BookDatabase.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-05-01T14:12:30.359Z",
+              "EditorCaption": " [Diagram1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Author.cs",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\BookMaster\\BookMaster\\Models\\Author.cs",
+              "RelativeDocumentMoniker": "BookMaster\\Models\\Author.cs",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\BookMaster\\BookMaster\\Models\\Author.cs",
+              "RelativeToolTip": "BookMaster\\Models\\Author.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T13:45:16.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "PageReports.xaml",
               "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\BookMaster\\BookMaster\\Pages\\PageReports.xaml",
               "RelativeDocumentMoniker": "BookMaster\\Pages\\PageReports.xaml",
               "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\BookMaster\\BookMaster\\Pages\\PageReports.xaml",
               "RelativeToolTip": "BookMaster\\Pages\\PageReports.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-30T16:37:26.884Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-30T16:37:26.884Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Pages\\PageCirculation.xaml.cs",
+              "DocumentIndex": 7,
+              "Title": "PageCirculation.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\BookMaster\\BookMaster\\Pages\\PageCirculation.xaml.cs",
               "RelativeDocumentMoniker": "BookMaster\\Pages\\PageCirculation.xaml.cs",
               "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\BookMaster\\BookMaster\\Pages\\PageCirculation.xaml.cs",
               "RelativeToolTip": "BookMaster\\Pages\\PageCirculation.xaml.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAIwEAAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-30T16:29:30.853Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "PageCirculation.xaml",
               "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\BookMaster\\BookMaster\\Pages\\PageCirculation.xaml",
               "RelativeDocumentMoniker": "BookMaster\\Pages\\PageCirculation.xaml",
@@ -146,8 +174,8 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Pages\\PageCustomet.xaml.cs",
+              "DocumentIndex": 15,
+              "Title": "PageCustomet.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\BookMaster\\BookMaster\\Pages\\PageCustomet.xaml.cs",
               "RelativeDocumentMoniker": "BookMaster\\Pages\\PageCustomet.xaml.cs",
               "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\BookMaster\\BookMaster\\Pages\\PageCustomet.xaml.cs",
@@ -159,7 +187,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "PageCustomet.xaml",
               "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\BookMaster\\BookMaster\\Pages\\PageCustomet.xaml",
               "RelativeDocumentMoniker": "BookMaster\\Pages\\PageCustomet.xaml",
@@ -172,7 +200,7 @@
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "Pages\\PageCustomers.xaml.cs",
+              "Title": "PageCustomers.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\BookMaster\\BookMaster\\Pages\\PageCustomers.xaml.cs",
               "RelativeDocumentMoniker": "BookMaster\\Pages\\PageCustomers.xaml.cs",
               "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\BookMaster\\BookMaster\\Pages\\PageCustomers.xaml.cs",
@@ -184,7 +212,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 12,
               "Title": "PageCustomers.xaml",
               "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\BookMaster\\BookMaster\\Pages\\PageCustomers.xaml",
               "RelativeDocumentMoniker": "BookMaster\\Pages\\PageCustomers.xaml",
@@ -197,7 +225,7 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Windows\\OknoLogin.xaml.cs",
+              "Title": "OknoLogin.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\BookMaster\\BookMaster\\Windows\\OknoLogin.xaml.cs",
               "RelativeDocumentMoniker": "BookMaster\\Windows\\OknoLogin.xaml.cs",
               "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\BookMaster\\BookMaster\\Windows\\OknoLogin.xaml.cs",
@@ -209,7 +237,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "OknoLogin.xaml",
               "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\BookMaster\\BookMaster\\Windows\\OknoLogin.xaml",
               "RelativeDocumentMoniker": "BookMaster\\Windows\\OknoLogin.xaml",
@@ -221,58 +249,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 10,
               "Title": "Book.cs",
               "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\BookMaster\\BookMaster\\Models\\Partials\\Book.cs",
               "RelativeDocumentMoniker": "BookMaster\\Models\\Partials\\Book.cs",
               "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\BookMaster\\BookMaster\\Models\\Partials\\Book.cs",
               "RelativeToolTip": "BookMaster\\Models\\Partials\\Book.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC4AAAANAAAA",
+              "ViewState": "AQIAACYAAAAAAAAAAAAmwDUAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-30T15:06:00.545Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 18,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\BookMaster\\BookMaster\\App.xaml.cs",
               "RelativeDocumentMoniker": "BookMaster\\App.xaml.cs",
               "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\BookMaster\\BookMaster\\App.xaml.cs",
               "RelativeToolTip": "BookMaster\\App.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T15:03:04.487Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-30T15:03:04.487Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "BookDatabase.edmx [Diagram1]",
-              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\BookMaster\\BookMaster\\Models\\BookDatabase.edmx",
-              "RelativeDocumentMoniker": "BookMaster\\Models\\BookDatabase.edmx",
-              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\BookMaster\\BookMaster\\Models\\BookDatabase.edmx [Diagram1]",
-              "RelativeToolTip": "BookMaster\\Models\\BookDatabase.edmx [Diagram1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
-              "WhenOpened": "2024-04-30T15:02:28.541Z",
-              "EditorCaption": " [Diagram1]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Windows\\OknoAuthors.xaml.cs",
+              "DocumentIndex": 6,
+              "Title": "OknoAuthors.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\BookMaster\\BookMaster\\Windows\\OknoAuthors.xaml.cs",
               "RelativeDocumentMoniker": "BookMaster\\Windows\\OknoAuthors.xaml.cs",
               "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\BookMaster\\BookMaster\\Windows\\OknoAuthors.xaml.cs",
               "RelativeToolTip": "BookMaster\\Windows\\OknoAuthors.xaml.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACQAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-30T14:56:11.113Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "OknoAuthors.xaml",
               "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\BookMaster\\BookMaster\\Windows\\OknoAuthors.xaml",
               "RelativeDocumentMoniker": "BookMaster\\Windows\\OknoAuthors.xaml",
@@ -284,7 +299,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "App.config",
               "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\BookMaster\\BookMaster\\App.config",
               "RelativeDocumentMoniker": "BookMaster\\App.config",
@@ -297,20 +312,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Pages\\PageMain.xaml.cs",
+              "DocumentIndex": 3,
+              "Title": "PageMain.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\BookMaster\\BookMaster\\Pages\\PageMain.xaml.cs",
               "RelativeDocumentMoniker": "BookMaster\\Pages\\PageMain.xaml.cs",
               "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\BookMaster\\BookMaster\\Pages\\PageMain.xaml.cs",
               "RelativeToolTip": "BookMaster\\Pages\\PageMain.xaml.cs",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAAwCoAAAAsAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAgwFUAAABkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-30T14:26:48.9Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "PageMain.xaml",
               "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\BookMaster\\BookMaster\\Pages\\PageMain.xaml",
               "RelativeDocumentMoniker": "BookMaster\\Pages\\PageMain.xaml",
@@ -322,7 +337,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\BookMaster\\BookMaster\\MainWindow.xaml",
               "RelativeDocumentMoniker": "BookMaster\\MainWindow.xaml",
@@ -334,13 +349,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\BookMaster\\BookMaster\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "BookMaster\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\BookMaster\\BookMaster\\MainWindow.xaml.cs",
               "RelativeToolTip": "BookMaster\\MainWindow.xaml.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAswDMAAAAJAAAA",
+              "ViewState": "AQIAACgAAAAAAAAAAAAowFIAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-30T14:05:00.928Z",
               "EditorCaption": ""

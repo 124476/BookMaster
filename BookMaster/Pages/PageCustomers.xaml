@@ -14,16 +14,16 @@
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition Width="3*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="100">
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="150">
             <TextBlock Text="Customer ID" FontSize="17"></TextBlock>
             <TextBox x:Name="PoiskCustomer" FontSize="17"></TextBox>
             <TextBlock Text="Name" FontSize="17"></TextBlock>
             <TextBox x:Name="PoiskName" FontSize="17"></TextBox>
-            <Button x:Name="Search" FontSize="17" Click="Search_Click" Content="Search"></Button>
+            <Button x:Name="Search" FontSize="17" Click="Search_Click" Content="Search" Background="White" Margin="0,10,0,0"></Button>
         </StackPanel>
         <StackPanel VerticalAlignment="Bottom" Margin="0,0,0,30"  HorizontalAlignment="Center" Width="150" Orientation="Horizontal">
-            <Button x:Name="Edit" FontSize="17" Click="Edit_Click"  Content="Edit..." Width="70"></Button>
-            <Button x:Name="Add" FontSize="17" Click="Add_Click"  Content="Add..." Width="70" Margin="10,0,0,0"></Button>
+            <Button x:Name="Edit" Background="White" FontSize="17" Click="Edit_Click"  Content="Edit..." Width="70"></Button>
+            <Button x:Name="Add" Background="White" FontSize="17" Click="Add_Click"  Content="Add..." Width="70" Margin="10,0,0,0"></Button>
         </StackPanel>
         <DataGrid x:Name="DataCustomers" FontSize="17" AutoGenerateColumns="False" IsReadOnly="True" Grid.Column="1">
             <DataGrid.Columns>

@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище BookMasterDatabaseModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Author">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="Bio" Type="nvarchar(max)" />
+    <Property Name="BirthDate" Type="nvarchar" MaxLength="20" />
+    <Property Name="DeathDate" Type="nvarchar" MaxLength="20" />
+    <Property Name="Wikipedia" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Book">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="500" />
+    <Property Name="Subtitle" Type="nvarchar" MaxLength="500" />
+    <Property Name="FirstPublishDate" Type="nvarchar" MaxLength="20" />
+    <Property Name="Description" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Bookauthor">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BookId" Type="int" Nullable="false" />
+    <Property Name="AuthorId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BookCover">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BookId" Type="int" />
+    <Property Name="CoverFile" Type="image" />
+  </EntityType>
+  <EntityType Name="BookSubject">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Subject" Type="nvarchar" MaxLength="400" />
+    <Property Name="BookId" Type="int" />
+  </EntityType>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdC" Type="nvarchar" MaxLength="150" />
+    <Property Name="Name" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="Address" Type="nvarchar" MaxLength="250" />
+    <Property Name="Zip" Type="nvarchar" MaxLength="50" />
+    <Property Name="City" Type="nvarchar" MaxLength="150" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="HistoryBook">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CustomerId" Type="int" />
+    <Property Name="BookId" Type="int" />
+    <Property Name="DateOfIssue" Type="date" />
+    <Property Name="ReturnDate" Type="date" />
+    <Property Name="IsReturned" Type="bit" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <Association Name="FK_Bookauthor_Author">
+    <End Role="Author" Type="Self.Author" Multiplicity="1" />
+    <End Role="Bookauthor" Type="Self.Bookauthor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Author">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Bookauthor">
+        <PropertyRef Name="AuthorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Bookauthor_Book">
+    <End Role="Book" Type="Self.Book" Multiplicity="1" />
+    <End Role="Bookauthor" Type="Self.Bookauthor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Book">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Bookauthor">
+        <PropertyRef Name="BookId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BookCover_Book">
+    <End Role="Book" Type="Self.Book" Multiplicity="0..1" />
+    <End Role="BookCover" Type="Self.BookCover" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Book">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BookCover">
+        <PropertyRef Name="BookId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BookSubject_Book">
+    <End Role="Book" Type="Self.Book" Multiplicity="0..1" />
+    <End Role="BookSubject" Type="Self.BookSubject" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Book">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BookSubject">
+        <PropertyRef Name="BookId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HistoryBook_Book">
+    <End Role="Book" Type="Self.Book" Multiplicity="0..1" />
+    <End Role="HistoryBook" Type="Self.HistoryBook" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Book">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="HistoryBook">
+        <PropertyRef Name="BookId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HistoryBook_Customer">
+    <End Role="Customer" Type="Self.Customer" Multiplicity="0..1" />
+    <End Role="HistoryBook" Type="Self.HistoryBook" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="HistoryBook">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище BookMasterDatabaseModelContainer">
+    <EntitySet Name="Author" EntityType="Self.Author" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Book" EntityType="Self.Book" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Bookauthor" EntityType="Self.Bookauthor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BookCover" EntityType="Self.BookCover" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BookSubject" EntityType="Self.BookSubject" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Customer" EntityType="Self.Customer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HistoryBook" EntityType="Self.HistoryBook" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Bookauthor_Author" Association="Self.FK_Bookauthor_Author">
+      <End Role="Author" EntitySet="Author" />
+      <End Role="Bookauthor" EntitySet="Bookauthor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Bookauthor_Book" Association="Self.FK_Bookauthor_Book">
+      <End Role="Book" EntitySet="Book" />
+      <End Role="Bookauthor" EntitySet="Bookauthor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BookCover_Book" Association="Self.FK_BookCover_Book">
+      <End Role="Book" EntitySet="Book" />
+      <End Role="BookCover" EntitySet="BookCover" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BookSubject_Book" Association="Self.FK_BookSubject_Book">
+      <End Role="Book" EntitySet="Book" />
+      <End Role="BookSubject" EntitySet="BookSubject" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HistoryBook_Book" Association="Self.FK_HistoryBook_Book">
+      <End Role="Book" EntitySet="Book" />
+      <End Role="HistoryBook" EntitySet="HistoryBook" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HistoryBook_Customer" Association="Self.FK_HistoryBook_Customer">
+      <End Role="Customer" EntitySet="Customer" />
+      <End Role="HistoryBook" EntitySet="HistoryBook" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

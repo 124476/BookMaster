@@ -47,8 +47,8 @@
             </StackPanel>
         </StackPanel>
         <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="1" Height="30" HorizontalAlignment="Right" Margin="0,0,10,0">
-            <Button x:Name="Save" FontSize="17" Content="Save" Click="Save_Click" Width="100" Margin="0,0,10,0"></Button>
-            <Button x:Name="Cancel" FontSize="17" Content="Cancel" Click="Cancel_Click"  Width="100"></Button>
+            <Button x:Name="Save" FontSize="17" Content="Save" Click="Save_Click" Width="100" Margin="0,0,10,0" Background="White"></Button>
+            <Button x:Name="Cancel" FontSize="17" Content="Cancel" Click="Cancel_Click"  Width="100" Background="White"></Button>
         </StackPanel>
     </Grid>
 </Page>

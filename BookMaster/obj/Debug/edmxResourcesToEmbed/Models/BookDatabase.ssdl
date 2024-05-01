@@ -58,6 +58,17 @@
     <Property Name="Phone" Type="nvarchar" MaxLength="50" />
     <Property Name="Email" Type="nvarchar" MaxLength="150" />
   </EntityType>
+  <EntityType Name="HistoryBook">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CustomerId" Type="int" />
+    <Property Name="BookId" Type="int" />
+    <Property Name="DateOfIssue" Type="date" />
+    <Property Name="ReturnDate" Type="date" />
+    <Property Name="IsReturned" Type="bit" />
+  </EntityType>
   <EntityType Name="sysdiagrams">
     <Key>
       <PropertyRef Name="diagram_id" />
@@ -116,6 +127,30 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_HistoryBook_Book">
+    <End Role="Book" Type="Self.Book" Multiplicity="0..1" />
+    <End Role="HistoryBook" Type="Self.HistoryBook" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Book">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="HistoryBook">
+        <PropertyRef Name="BookId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HistoryBook_Customer">
+    <End Role="Customer" Type="Self.Customer" Multiplicity="0..1" />
+    <End Role="HistoryBook" Type="Self.HistoryBook" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="HistoryBook">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <EntityContainer Name="Хранилище BookMasterDatabaseModelContainer">
     <EntitySet Name="Author" EntityType="Self.Author" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Book" EntityType="Self.Book" Schema="dbo" store:Type="Tables" />
@@ -123,6 +158,7 @@
     <EntitySet Name="BookCover" EntityType="Self.BookCover" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="BookSubject" EntityType="Self.BookSubject" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Customer" EntityType="Self.Customer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HistoryBook" EntityType="Self.HistoryBook" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
     <AssociationSet Name="FK_Bookauthor_Author" Association="Self.FK_Bookauthor_Author">
       <End Role="Author" EntitySet="Author" />
@@ -139,6 +175,14 @@
     <AssociationSet Name="FK_BookSubject_Book" Association="Self.FK_BookSubject_Book">
       <End Role="Book" EntitySet="Book" />
       <End Role="BookSubject" EntitySet="BookSubject" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HistoryBook_Book" Association="Self.FK_HistoryBook_Book">
+      <End Role="Book" EntitySet="Book" />
+      <End Role="HistoryBook" EntitySet="HistoryBook" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HistoryBook_Customer" Association="Self.FK_HistoryBook_Customer">
+      <End Role="Customer" EntitySet="Customer" />
+      <End Role="HistoryBook" EntitySet="HistoryBook" />
     </AssociationSet>
   </EntityContainer>
 </Schema>

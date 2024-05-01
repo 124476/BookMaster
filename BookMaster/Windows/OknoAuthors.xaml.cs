@@ -20,20 +20,21 @@ namespace BookMaster.Windows
     /// </summary>
     public partial class OknoAuthors : Window
     {
-        Book contextBook;
         public OknoAuthors(Book book)
         {
             InitializeComponent();
+            var authors = App.DB.Bookauthor.Where(x => x.BookId == book.Id).ToList().Select(x => x.Author).ToList();
+            ComboAuthors.ItemsSource = authors;
         }
 
         private void ComboAuthors_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            DataContext = ComboAuthors.SelectedItem as Author;
         }
 
         private void CloseBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            DialogResult = false;
         }
     }
 }

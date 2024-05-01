@@ -31,6 +31,7 @@ namespace BookMaster.Models
         public virtual DbSet<BookCover> BookCover { get; set; }
         public virtual DbSet<BookSubject> BookSubject { get; set; }
         public virtual DbSet<Customer> Customer { get; set; }
+        public virtual DbSet<HistoryBook> HistoryBook { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
     }
 }

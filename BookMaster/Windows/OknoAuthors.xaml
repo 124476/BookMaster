@@ -13,7 +13,7 @@
             <RowDefinition Height="auto"></RowDefinition>
         </Grid.RowDefinitions>
         <StackPanel>
-            <ComboBox Name="ComboAuthors" FontSize="17" SelectionChanged="ComboAuthors_SelectionChanged"></ComboBox>
+            <ComboBox Name="ComboAuthors" FontSize="17" SelectionChanged="ComboAuthors_SelectionChanged" DisplayMemberPath="Name"></ComboBox>
             <StackPanel Orientation="Horizontal">
                 <TextBlock Text="{Binding DeathDate}" FontSize="17"></TextBlock>
                 <TextBlock Text="-" FontSize="17" Margin="2,0,2,0"></TextBlock>

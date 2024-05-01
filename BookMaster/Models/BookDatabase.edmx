@@ -63,6 +63,17 @@
           <Property Name="Phone" Type="nvarchar" MaxLength="50" />
           <Property Name="Email" Type="nvarchar" MaxLength="150" />
         </EntityType>
+        <EntityType Name="HistoryBook">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CustomerId" Type="int" />
+          <Property Name="BookId" Type="int" />
+          <Property Name="DateOfIssue" Type="date" />
+          <Property Name="ReturnDate" Type="date" />
+          <Property Name="IsReturned" Type="bit" />
+        </EntityType>
         <EntityType Name="sysdiagrams">
           <Key>
             <PropertyRef Name="diagram_id" />
@@ -121,6 +132,30 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_HistoryBook_Book">
+          <End Role="Book" Type="Self.Book" Multiplicity="0..1" />
+          <End Role="HistoryBook" Type="Self.HistoryBook" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Book">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="HistoryBook">
+              <PropertyRef Name="BookId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HistoryBook_Customer">
+          <End Role="Customer" Type="Self.Customer" Multiplicity="0..1" />
+          <End Role="HistoryBook" Type="Self.HistoryBook" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Customer">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="HistoryBook">
+              <PropertyRef Name="CustomerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <EntityContainer Name="Хранилище BookMasterDatabaseModelContainer">
           <EntitySet Name="Author" EntityType="Self.Author" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Book" EntityType="Self.Book" Schema="dbo" store:Type="Tables" />
@@ -128,6 +163,7 @@
           <EntitySet Name="BookCover" EntityType="Self.BookCover" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="BookSubject" EntityType="Self.BookSubject" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Customer" EntityType="Self.Customer" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="HistoryBook" EntityType="Self.HistoryBook" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK_Bookauthor_Author" Association="Self.FK_Bookauthor_Author">
             <End Role="Author" EntitySet="Author" />
@@ -145,6 +181,14 @@
             <End Role="Book" EntitySet="Book" />
             <End Role="BookSubject" EntitySet="BookSubject" />
           </AssociationSet>
+          <AssociationSet Name="FK_HistoryBook_Book" Association="Self.FK_HistoryBook_Book">
+            <End Role="Book" EntitySet="Book" />
+            <End Role="HistoryBook" EntitySet="HistoryBook" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HistoryBook_Customer" Association="Self.FK_HistoryBook_Customer">
+            <End Role="Customer" EntitySet="Customer" />
+            <End Role="HistoryBook" EntitySet="HistoryBook" />
+          </AssociationSet>
         </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
@@ -157,6 +201,7 @@
           <EntitySet Name="BookCover" EntityType="BookMasterDatabaseModel.BookCover" />
           <EntitySet Name="BookSubject" EntityType="BookMasterDatabaseModel.BookSubject" />
           <EntitySet Name="Customer" EntityType="BookMasterDatabaseModel.Customer" />
+          <EntitySet Name="HistoryBook" EntityType="BookMasterDatabaseModel.HistoryBook" />
           <EntitySet Name="sysdiagrams" EntityType="BookMasterDatabaseModel.sysdiagrams" />
           <AssociationSet Name="FK_Bookauthor_Author" Association="BookMasterDatabaseModel.FK_Bookauthor_Author">
             <End Role="Author" EntitySet="Author" />
@@ -173,6 +218,14 @@
           <AssociationSet Name="FK_BookSubject_Book" Association="BookMasterDatabaseModel.FK_BookSubject_Book">
             <End Role="Book" EntitySet="Book" />
             <End Role="BookSubject" EntitySet="BookSubject" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HistoryBook_Book" Association="BookMasterDatabaseModel.FK_HistoryBook_Book">
+            <End Role="Book" EntitySet="Book" />
+            <End Role="HistoryBook" EntitySet="HistoryBook" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HistoryBook_Customer" Association="BookMasterDatabaseModel.FK_HistoryBook_Customer">
+            <End Role="Customer" EntitySet="Customer" />
+            <End Role="HistoryBook" EntitySet="HistoryBook" />
           </AssociationSet>
         </EntityContainer>
         <EntityType Name="Author">
@@ -199,6 +252,7 @@
           <NavigationProperty Name="Bookauthor" Relationship="BookMasterDatabaseModel.FK_Bookauthor_Book" FromRole="Book" ToRole="Bookauthor" />
           <NavigationProperty Name="BookCover" Relationship="BookMasterDatabaseModel.FK_BookCover_Book" FromRole="Book" ToRole="BookCover" />
           <NavigationProperty Name="BookSubject" Relationship="BookMasterDatabaseModel.FK_BookSubject_Book" FromRole="Book" ToRole="BookSubject" />
+          <NavigationProperty Name="HistoryBook" Relationship="BookMasterDatabaseModel.FK_HistoryBook_Book" FromRole="Book" ToRole="HistoryBook" />
         </EntityType>
         <EntityType Name="Bookauthor">
           <Key>
@@ -240,6 +294,20 @@
           <Property Name="City" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
           <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Email" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="HistoryBook" Relationship="BookMasterDatabaseModel.FK_HistoryBook_Customer" FromRole="Customer" ToRole="HistoryBook" />
+        </EntityType>
+        <EntityType Name="HistoryBook">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CustomerId" Type="Int32" />
+          <Property Name="BookId" Type="Int32" />
+          <Property Name="DateOfIssue" Type="DateTime" Precision="0" />
+          <Property Name="ReturnDate" Type="DateTime" Precision="0" />
+          <Property Name="IsReturned" Type="Boolean" />
+          <NavigationProperty Name="Book" Relationship="BookMasterDatabaseModel.FK_HistoryBook_Book" FromRole="HistoryBook" ToRole="Book" />
+          <NavigationProperty Name="Customer" Relationship="BookMasterDatabaseModel.FK_HistoryBook_Customer" FromRole="HistoryBook" ToRole="Customer" />
         </EntityType>
         <EntityType Name="sysdiagrams">
           <Key>
@@ -299,7 +367,31 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-      </Schema>
+        <Association Name="FK_HistoryBook_Book">
+          <End Type="BookMasterDatabaseModel.Book" Role="Book" Multiplicity="0..1" />
+          <End Type="BookMasterDatabaseModel.HistoryBook" Role="HistoryBook" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Book">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="HistoryBook">
+              <PropertyRef Name="BookId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HistoryBook_Customer">
+          <End Type="BookMasterDatabaseModel.Customer" Role="Customer" Multiplicity="0..1" />
+          <End Type="BookMasterDatabaseModel.HistoryBook" Role="HistoryBook" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Customer">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="HistoryBook">
+              <PropertyRef Name="CustomerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
@@ -365,6 +457,18 @@
                 <ScalarProperty Name="Address" ColumnName="Address" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="IdC" ColumnName="IdC" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HistoryBook">
+            <EntityTypeMapping TypeName="BookMasterDatabaseModel.HistoryBook">
+              <MappingFragment StoreEntitySet="HistoryBook">
+                <ScalarProperty Name="IsReturned" ColumnName="IsReturned" />
+                <ScalarProperty Name="ReturnDate" ColumnName="ReturnDate" />
+                <ScalarProperty Name="DateOfIssue" ColumnName="DateOfIssue" />
+                <ScalarProperty Name="BookId" ColumnName="BookId" />
+                <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>
