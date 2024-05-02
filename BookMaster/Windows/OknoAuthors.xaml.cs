@@ -25,6 +25,7 @@ namespace BookMaster.Windows
             InitializeComponent();
             var authors = App.DB.Bookauthor.Where(x => x.BookId == book.Id).ToList().Select(x => x.Author).ToList();
             ComboAuthors.ItemsSource = authors;
+            ComboAuthors.SelectedIndex = 0;
         }
 
         private void ComboAuthors_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -35,6 +36,13 @@ namespace BookMaster.Windows
         private void CloseBtn_Click(object sender, RoutedEventArgs e)
         {
             DialogResult = false;
+        }
+
+        private void Hyperlink_RequestNavigate(object sender, System.Windows.Navigation.RequestNavigateEventArgs e)
+        {
+            Author author = ComboAuthors.SelectedItem as Author;
+            if (author != null)
+                System.Diagnostics.Process.Start(author.Wikipedia);
         }
     }
 }

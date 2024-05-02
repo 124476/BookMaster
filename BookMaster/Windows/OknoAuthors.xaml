@@ -25,7 +25,7 @@
             <ScrollViewer Height="150">
                 <TextBlock Text="{Binding Bio}" TextWrapping="Wrap" Width="350"></TextBlock>
             </ScrollViewer>
-            <TextBlock Text="{Binding Wikipedia}" TextWrapping="Wrap" Width="350"></TextBlock>
+            <TextBlock TextWrapping="Wrap" Width="350" FontSize="17"><Hyperlink NavigateUri="{Binding Wikipedia}" RequestNavigate="Hyperlink_RequestNavigate">Learn more on Wikipedia</Hyperlink></TextBlock>
             <Button Name="CloseBtn" Content="Close" Click="CloseBtn_Click" Width="100" FontSize="17" Margin="10,10,10,10" HorizontalAlignment="Left"></Button>
         </StackPanel>
     </Grid>
